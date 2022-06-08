@@ -15,6 +15,8 @@ functions:
     
     
 Example of worklfow:
+from pesel import PESEL, mask, fix, control
+
 >>> p = 23450500711
 >>> pes = PESEL(p)
 >>> pes
@@ -29,7 +31,7 @@ datetime.date(2123, 5, 5)
 >>> pes.gender
 'M'
 
->>> pes.masked
+>>> pes.mask()
 '234505xxxMx'
 
 >>> mask(p)
